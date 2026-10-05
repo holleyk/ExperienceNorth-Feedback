@@ -1,0 +1,27 @@
+name: Suggestion
+description: Suggest an improvement to Experience North.
+body:
+  - type: markdown
+    attributes:
+      value: "Reports and replies are public. Keep private or personal information out of your submission. For private feedback, email contact@experiencenorth.ca."
+  - type: input
+    id: page
+    attributes:
+      label: Page or community
+      description: Link to the affected page, or name the community or Place.
+    validations:
+      required: false
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: What would you like to improve, and how would it help visitors?
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Source or supporting details (optional)
+      description: Add public source links or relevant details. Do not upload private correspondence.
+    validations:
+      required: false
